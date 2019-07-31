@@ -3,8 +3,8 @@
 
 [Unit]
 Description=fty-nut service
-Requires=network.target malamute.service
-After=network.target malamute.service
+Requires=network.target malamute.service fty-alert-engine.service
+After=network.target malamute.service fty-alert-engine.service
 Before=fty-asset.service
 PartOf=bios.target
 
